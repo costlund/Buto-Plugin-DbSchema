@@ -11,6 +11,17 @@ data:
     schema:
       - '/plugin/wf/account2/mysql/schema.yml'
 ```
+Use method param to modif data for custom needs. Param data will be passed in.
+```
+type: widget
+data:
+  plugin: db/schema
+  method: list_field
+  data:
+    method:
+      plugin: '_plugin_/_plugin_'
+      method: my_method
+```
 
 ## Widget list_table
 ```

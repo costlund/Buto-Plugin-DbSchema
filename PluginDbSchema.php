@@ -56,6 +56,14 @@ class PluginDbSchema{
       }
     }
     /**
+     */
+    if($data->get('data/method')){
+      wfPlugin::includeonce($data->get('data/method/plugin'));
+      $obj = wfSettings::getPluginObj($data->get('data/method/plugin'));
+      $method = $data->get('data/method/method');
+      $field = $obj->$method($field);
+    }
+    /**
      * 
      */
     wfPlugin::enable('wf/table');
