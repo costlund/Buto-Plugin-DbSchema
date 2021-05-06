@@ -1,5 +1,13 @@
-version: 1.1.0
+version: 1.3.0
 history:
+  1.3.0:
+    date: '2021-05-06'
+    title: Schema
+    description: 'Add schema column.'
+  1.2.0:
+    date: '2021-05-06'
+    title: 'Own description'
+    description: 'One could save own description.'
   1.1.0:
     date: '2021-05-04'
     title: Method

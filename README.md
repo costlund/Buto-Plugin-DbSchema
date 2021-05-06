@@ -1,5 +1,19 @@
 # Buto-Plugin-DbSchema
-Widgets to list tables and fields from a database schema file(s).
+Widgets to list tables and fields from a database schema file(s). One could make own descriptions on each post. 
+
+## Custom savings
+File where own descriptions is saved.
+```
+/../buto_data/theme/[theme]/plugin_db_schema.yml
+```
+
+## Settings
+Settings for pages.
+```
+plugin_modules:
+  db_schema:
+    plugin: 'db/schema'  
+```
 
 ## Widget list_field
 ```

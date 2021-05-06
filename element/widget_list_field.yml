@@ -1,4 +1,7 @@
 -
+  type: script
+  innerHTML: var db_schema_field_row = null;
+-
   type: widget
   data:
     plugin: wf/table
