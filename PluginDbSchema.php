@@ -7,10 +7,10 @@ class PluginDbSchema{
     return new PluginWfYml(wfGlobals::getAppDir().'/../buto_data/theme/[theme]/plugin_db_schema.yml');
   }
   private function buto_data_field_key($schema, $table, $field){
-    return str_replace("/", "_", $schema)."/table/$table/field/$field";
+    return wfPhpfunc::str_replace("/", "_", $schema)."/table/$table/field/$field";
   }
   private function buto_data_table_key($schema, $table){
-    return str_replace("/", "_", $schema)."/table/$table";
+    return wfPhpfunc::str_replace("/", "_", $schema)."/table/$table";
   }
   public function widget_list_field($data){
     $buto_data = $this->buto_data();
